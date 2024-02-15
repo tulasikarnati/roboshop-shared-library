@@ -1,6 +1,6 @@
 // #!groovy
 
-def decidePipeline(Map configMap){
+def decidePipeline(configMap){
     application = configMap.get("application")
     switch(application) {
         case 'nodejsVM':
