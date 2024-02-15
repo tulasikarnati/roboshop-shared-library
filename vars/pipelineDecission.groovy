@@ -1,6 +1,26 @@
+// #!groovy
+
+// def decidepipeline(Map, configMap) {
+//     application = configMap.get("application")
+//     switch(application) {
+//         case 'nodejsVM':
+//             nodejsVM(configMap)
+//             break
+//         case 'javaVM':
+//             javaVM(configMap)
+//             break
+//         case 'nodejsEKs':
+//             nodejsEKs(configMap)
+//             break
+//         default:
+//             error "Application is not recognized"
+//             break
+//     }
+// }
+
 #!groovy
 
-def decidepipeline(Map, configMap) {
+def decidePipeline(Map configMap){
     application = configMap.get("application")
     switch(application) {
         case 'nodejsVM':
@@ -9,11 +29,11 @@ def decidepipeline(Map, configMap) {
         case 'javaVM':
             javaVM(configMap)
             break
-        case 'nodejsEKs':
-            nodejsEKs(configMap)
+        case 'nodejsEKS':
+            nodejsEKS(configMap)
             break
         default:
-            error "Application is not recognized"
+            error "Application is not recognised"
             break
     }
 }
