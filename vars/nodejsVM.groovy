@@ -99,7 +99,7 @@ def call(Map, configMap){
                     }
                 }
             }
-    }
+        }
         // post build
         post {
             always {
@@ -113,5 +113,5 @@ def call(Map, configMap){
                 echo "pipeline is success"
             }
         }
-}
+    }
 }
